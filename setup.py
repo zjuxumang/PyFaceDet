@@ -5,13 +5,15 @@ import setuptools
 # the name PyFace is used
 # use PyFaceDet instead :P
 setuptools.setup(
-    name='PyFaceDet',
-    version='0.2.0',
-    author='zxxml',
-    author_email='zxxml@outlook.com',
-    url='https://github.com/zxxml/PyFace',
-    description='See GitHub for details.',
+    name='easyFace',
+    version='0.1.3',
+    author='zhuzhuangtian',
+    author_email='576583342@qq.com',
+    url='https://github.com/zjuxumang/PyFace',
+    description='fork自zxxml的PyFace项目，增加了对python版本的检查，避免了windows系统下使用32-bit python报错的问题。底层使用了yushiqi开源的libfacedetection。具体使用方法见github',
     packages=setuptools.find_packages(),
+    platforms=["all"],
+    python_requires='>=3.5',
     package_data={'': ['*.dll', '*.so']},
     install_requires=['numpy', 'Pillow']
 )
